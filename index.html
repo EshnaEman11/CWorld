@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Methods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #005f73;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .title {
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .header .subtitle {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .header a {
+            color: #ffd166;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid #ffd166;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .header a:hover {
+            background-color: #ffd166;
+            color: #005f73;
+        }
+
+        .main {
+            text-align: center;
+            padding: 60px 20px;
+            flex: 1;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 800;
+            color: #005f73;
+        }
+
+        .sub-title {
+            color: #e07a5f;
+            font-size: 64px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        .description {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .method {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            flex: 1;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .method:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .method-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #005f73;
+            margin-bottom: 10px;
+        }
+
+        .method a {
+            font-size: 18px;
+            font-weight: 600;
+            color: #e07a5f;
+            text-decoration: none;
+            border: 2px solid #e07a5f;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .method a:hover {
+            background-color: #e07a5f;
+            color: white;
+        }
+
+        .method .additional-links {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            width: 280px;
+            z-index: 1;
+        }
+
+        .method:hover .additional-links {
+            display: block;
+        }
+
+        .method .additional-links a {
+            display: block;
+            color: #005f73;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+
+        .footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .footer a {
+            color: #ffd166;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            COMPUTATIONAL WORLD
+        </div>
+        <div class="subtitle">DIVE INTO A DIFFERENT WORLD</div>
+        <a href="https://www.bragitoff.com/2015/11/numerical-analysis-c-programs-for-various-techniques/">
+            C++ Codes for Numerical Methods
+        </a>
+    </div>
+
+    <div class="main">
+        <div class="main-title">Computation. Data. Decisions.</div>
+        <div class="sub-title">JUST USE STATICS</div>
+        <div class="description">
+            Computational world uniquely unifies algorithms, data, notebooks, linguistics and deployment—enabling
+            powerful workflows across desktop, cloud, server, and mobile.
+        </div>
+    </div>
+
+    <div class="methods">
+        <div class="method">
+            <div class="method-title">Linear Algebra Calculator</div>
+            <a href="https://www.emathhelp.net/en/linear-algebra-calculator/">Explore</a>
+            <div class="additional-links">
+                <a href="https://www.emathhelp.net/en/calculators/linear-algebra/matrix-determinant-calculator/">Matrix Determinant</a>
+                <a href="https://www.emathhelp.net/en/calculators/linear-algebra/matrix-rank-calculator/">Matrix Rank</a>
+                <a href="https://www.emathhelp.net/en/calculators/linear-algebra/row-reduction-calculator/">Row Reduction</a>
+            </div>
+        </div>
+        <div class="method">
+            <div class="method-title">Numerical Integration Methods</div>
+            <a href="https://www.wolframalpha.com/examples/mathematics/applied-mathematics/numerical-analysis/numerical-integration">Explore</a>
+            <div class="additional-links">
+                <a href="https://www.wolframalpha.com/input/?i=trapezoidal+rule">Trapezoidal Rule</a>
+                <a href="https://www.wolframalpha.com/input/?i=simpson%27s+rule">Simpson's Rule</a>
+                <a href="https://www.wolframalpha.com/input/?i=romberg+integration">Romberg Integration</a>
+            </div>
+        </div>
+        <div class="method">
+            <div class="method-title">Numerical Methods, Linear Algebra & More</div>
+            <a href="https://www.codesansar.com/online-calculator/">Explore</a>
+            <div class="additional-links">
+                <a href="https://www.codesansar.com/numerical-methods/newton-raphson-method-online-calculator.htm">Newton-Raphson Method</a>
+                <a href="https://www.codesansar.com/numerical-methods/secant-method-online-calculator.htm">Secant Method</a>
+                <a href="https://www.codesansar.com/numerical-methods/matrix-inverse-online-calculator.htm">Matrix Inverse</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Computational World. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+        
+    </div>
+</body>
+
+</html>
